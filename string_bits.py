@@ -7,3 +7,5 @@
 
 def string_bits(str):
   return str[0::2]
+
+# NICE! I didn't even consider this solution!

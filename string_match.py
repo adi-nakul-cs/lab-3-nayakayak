@@ -7,6 +7,8 @@
 
 def string_match(a, b):
   count = 0
+  # instead of repeating the exact same loop code twice, we can use the if/else
+  # statements to assign a var to the length of the shorter string and use that
   if len(a) >= len(b):
     for i in range(len(b) - 1):
       if b[i] == a[i]:
