@@ -6,4 +6,4 @@
 # string_times('Hi', 1) → 'Hi'
 
 def string_times(str, n):
-    pass
+  return str*n
