@@ -4,3 +4,6 @@
 # front_times('Chocolate', 2) → 'ChoCho'
 # front_times('Chocolate', 3) → 'ChoChoCho'
 # front_times('Abc', 3) → 'AbcAbcAbc'
+
+def front_times(str, n):
+  return str[0:3]*n

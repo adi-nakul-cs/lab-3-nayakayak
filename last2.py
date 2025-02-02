@@ -4,3 +4,16 @@
 # last2('hixxhi') → 1
 # last2('xaxxaxaxx') → 1
 # last2('axxxaaxx') → 2
+
+def last2(str):
+  count = 0
+  if len(str) <= 2:
+    return 0
+  if len(str) > 2:
+    end = str[len(str)-2:len(str):]
+    beginning = str[0:len(str)-1]
+    for i in range(len(beginning) - 1):
+      if beginning[i] == end[0]:
+        if beginning[i + 1] == end[1]:
+          count = count + 1
+    return count
